@@ -52,7 +52,7 @@ nav a:hover:not(.active) {
 #header-aside{
 	float: left;
 	margin-top: 0px;
-	margin-left: 197px;
+	margin-left: 190px;
 	padding: 22px;
 	height: 88px;
 	color: #ffffff;
@@ -285,13 +285,17 @@ footer{
 	
 	
 }
-
+/*media query for 980 or less window size*/
 @media screen and (max-width: 980px){
+	#box{
+	margin-right: 15%;
+	padding: 20px;	
+	}
+
 	body{
 	
 		font-size: 12px;
 		line-height: 20px;
-		/*width: 100%;*/
 	}
 
 	p {	
@@ -300,8 +304,6 @@ footer{
 
 	#content-header {
 		height: 50px;
-		border-bottom-width: 2px;
-		text-align: left;
 		margin-bottom: 20px;
 		font-size: 15px;
 
@@ -310,15 +312,12 @@ footer{
 		
 		height: 55px;
 		margin: 0 0 20px 0;
-		font-size: 15px;
 
 	}
 	#header-aside{
-		
-		margin-left: 70px;
+		margin-left: 15%;
 		padding: 10px;
 		height: 53px;
-		font-size: 12px;
 	}
 
 	h1{
@@ -333,81 +332,65 @@ footer{
 		font-size: 15px;
 		line-height: 18px;
 	}
+
 	main{
 		width: 80%;
-		align-content: center;
-
+		margin-left: 15%;
+		margin-right: 4%;
 	}
 	.main {
-		/*height: 500px;*/
-		width: 50%;
-/*		margin: 0 20px 20px;
-*/   		
-		
+		width: 50%;	
 	}
 
 	#img-box {
 		height: 140px;
 		width: 100%;
-		margin: 0 auto;
+		/*margin: 0 auto;*/
+		margin-bottom: 20px;
 	 }
 
-/*######################################################*/
-/*right side-bar in main content*/
-.logo {
-	height: 45px;
-	width: 45px;
-	position: relative;
 
-/*	margin-top: 25px;*/
-}
-.side-logos{
-	
-	float: left;
-	margin-right: 10px;
-
-}
-#side-logo-right{
-	float: right;
-	
-}
-/*right side aside-bar*/
-
-#right-side{
-	
-	/*margin-left: 40px;*/
-	height: 150px;
-	width: 32%;
-	padding: 20px;
-
-}
-
-#right-aside-header{
-	height: 30px;
-	margin-bottom: 20px;
-	width: 100%;
+	/*right side-bar in main content*/
+	.logo {
+		height: 45px;
+		width: 45px; 
 	}
+	.side-logos{
+		margin: 5PX;
 
-/*######################################################*/
-/*navigation bar in the header*/
-#box{
-	/*float: right;*/
-	margin-right: 60px;
-	padding: 20px;
+	}
+	#side-logo-right{
+		margin: 5px 0;
 		
-}
+	}
+	/*right side aside-bar*/
+	#right-side{
+		height: 150px;
+		width: 200PX;
+		padding: 20px;
 
-footer{
-	position: static;
-	bottom: 0;
-	left: 0;
-	height: 60px;
-	padding:20px;
-	border-top-width: 5px;
-	font-size: 10px;
-	
-	
-}
+	}
+	/*header style of connect with me*/
+	#right-aside-header{
+		height: 30px;
+		margin-bottom: 20px;
+		width: 100%;
+		}
+
+	/*######################################################*/
+	/*navigation bar in the header*/
+
+	footer{
+		position: static;
+		bottom: 0;
+		left: 0;
+		height: 60px;
+		padding:20px;
+		border-top-width: 5px;
+		font-size: 10px;
+		
+		
+	}
 }
 
 /*media query for 768px width window and less*/
@@ -440,8 +423,8 @@ footer{
 
 	}
 	#header-aside{
-		
-		margin-left: 20px;
+		margin-left: 10%;
+		/*margin-left: 20px;*/
 		padding: 10px;
 		height: 53px;
 		font-size: 12px;
@@ -461,9 +444,7 @@ footer{
 	}
 	main{
 		width: 80%;
-/*		margin: auto;
-*/		align-content: center;
-
+		margin-left: 70px;
 	}
 	.main {
 		/*height: 500px;*/
@@ -482,63 +463,49 @@ footer{
 
 /*######################################################*/
 /*right side-bar in main content*/
-.logo {
-	height: 45px;
-	width: 45px;
-	position: relative;
+	/*.logo {
+		height: 45px;
+		width: 45px;
+		position: relative;
 
-/*	margin-top: 25px;*/
-}
-.side-logos{
-	
-	float: left;
-	margin-right: 8px;
+	/*	margin-top: 25px;*/
+	/*}*/
+	/*.side-logos{
+		
+		float: left;
+		margin-right: 8px;
 
-}
-#side-logo-right{
-	float: left;
-	
-}
-/*right side aside-bar*/
+	}*/
+	#side-logo-right{
+		float: left;
+		
+	}
+	/*right side aside-bar*/
+	#right-side{
+		
+		/*margin-left: 40px;*/
+		height: 150px;
+		width: 100%;
+		padding: 20px;
+		margin:0 0 20px 0;
 
-#right-side{
-	
-	/*margin-left: 40px;*/
-	height: 150px;
-	width: 100%;
-	padding: 20px;
-	margin:0 0 20px 0;
-
-}
-
-#right-aside-header{
-	height: 30px;
-	margin-bottom: 20px;
-	width: 100%;
-	text-align: left;
 	}
 
-/*######################################################*/
-/*navigation bar in the header*/
-#box{
-	/*float: right;*/
-	margin-right: 20px;
-	padding: 20px 0 20px 20px;
-		
-}
+	#right-aside-header{
+		height: 30px;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: left;
+		}
 
-footer{
-	position: static;
-	bottom: 0;
-	left: 0;
+	/*######################################################*/
+	/*navigation bar in the header*/
+	#box{
+		margin-right: 12%;
+		padding: 20px 0 20px 20px;
+			
+	}
 
-	height: 60px;
-	padding:20px;
-	border-top-width: 5px;
-	font-size: 10px;
-	
-	
-}
 }
 
 
@@ -549,36 +516,30 @@ footer{
 	
 		font-size: 10px;
 		line-height: 15px;
-		/*width: 100%;*/
 	}
 
 	p {	
-		padding-bottom: 10px;
+		clear: both;
+		padding-bottom: 7px;
 	}
 
 	#content-header {
 		height: 40px;
-		border-bottom-width: 2px;
-		text-align: left;
-		margin-bottom: 20px;
-		font-size: 15px;
-		padding: 5px
+		margin-bottom: 12px;
 
 	}
 	header{
-		
 		height: 70px;
 		margin: 0 auto;
 		font-size: 15px;
+		margin-bottom: 15px;
 
 	}
 	#header-aside{
-		
 		margin: 0;
 		width: 100%;
 		padding: 15px;
 		height: 40px;
-		/*font-size: 10px;*/
 	}
 
 	h1{
@@ -593,96 +554,68 @@ footer{
 		font-size: 15px;
 		line-height: 18px;
 	}
+
 	main{
+		margin-left: 50px;
 		width: 80%;
-/*		margin: auto;
-*/		align-content: center;
 
 	}
 	.main {
-		/*height: 500px;*/
 		width: 100%;
-		/*margin: 20px;*/	
-		padding:20px;
-		
+		margin-bottom: 15px;
 	}
 
 	#img-box {
 		height: 140px;
-		width: 200px;
-		float:left;
-		margin: 0 20px 20px 0; 
+		width: 100%;
+		margin-bottom: 10px;
 	 }
 
-/*######################################################*/
 /*right side-bar in main content*/
-.logo {
-	height: 45px;
-	width: 45px;
-	position: relative;
-
-/*	margin-top: 25px;*/
-}
-.side-logos{
-	
-	float: left;
-	margin-right: 8px;
-
-}
-#side-logo-right{
-	float: left;
-	
-}
-/*right side aside-bar*/
-
-#right-side{
-	
-	/*margin-left: 40px;*/
-	height: 150px;
-	width: 100%;
-	padding: 20px;
-	margin:0 0 20px 0;
-
-}
-
-#right-aside-header{
-	height: 30px;
-	margin-bottom: 20px;
-	width: 100%;
-	text-align: left;
+	.logo {
+		height: 45px;
+		width: 45px;
 	}
 
-/*######################################################*/
-/*navigation bar in the header*/
-#box{
-	/*float: right;*/
-	position: absolute;
-	top:25px;
-	left:0;
-	right: 0;
+	.side-logos{
+		margin-right: 8px;
+	}
 
-	margin: 0 auto;
-	/*padding-bottom: 10px;*/
+	#side-logo-right{
+		float: left;
 		
-}
-nav a{
-	text-align: center;
-	color: gray;
-	text-decoration: none;
-	padding: 18px;
-	font-size: 10px;
-}
+	}
 
-footer{
-	position: static;
-	bottom: 0;
-	left: 0;
+	/*right side aside-bar*/
+	#right-side{
+		height: 150px;
+		width: 100%;
+		padding: 20px;
+	}
 
-	height: 60px;
-	padding:20px;
-	border-top-width: 5px;
-	font-size: 10px;
-	
-	
-}
+	#right-aside-header{
+		height: 30px;
+		margin-bottom: 20px;
+		width: 100%;
+		/*text-align: left;*/
+		}
+
+	/*navigation bar in the header*/
+	#box{
+		position: absolute;
+		top:25px;
+		left:0;
+		right: 0;
+			
+	}
+	nav a{
+		padding: 18px;
+		font-size: 10px;
+	}
+
+	footer{
+		height: 60px;
+		padding:20px;
+		
+	}
 }
