@@ -239,12 +239,12 @@ input[type=submit]{
 }
 
 #portfolio-col-1 {
-	margin: 20px 50px 20px 0;
+	margin: 10px 50px 20px 0;
 	
 }
 
 #portfolio-col-2 {
-	margin: 20px 0px 20px 0;
+	margin: 12px 0px 20px 0;
 }
 
 
@@ -410,10 +410,9 @@ footer{
 		height: 40px;
 		border-bottom-width: 2px;
 		text-align: left;
-		margin-bottom: 20px;
-		font-size: 15px;
-		padding: 5px
-
+	/*	margin-bottom: 20px;*/
+		/*font-size: 15px;*/
+		padding: 18px
 	}
 	header{
 		
@@ -424,8 +423,7 @@ footer{
 	}
 	#header-aside{
 		margin-left: 10%;
-		/*margin-left: 20px;*/
-		padding: 10px;
+		padding: 18px;
 		height: 53px;
 		font-size: 12px;
 	}
@@ -452,6 +450,20 @@ footer{
 		/*margin: 20px;*/	
 		padding:20px;
 		
+	}
+	#portfolio-col-1 {
+	margin: 0 20px 0 0;
+	
+	}
+
+	#portfolio-col-2 {
+		margin: 0px 0px 0px 0;
+	}
+
+	.img-portfolio{
+		height: 180px;
+		width: 269px;
+		margin-bottom: 40px;
 	}
 
 	#img-box {
@@ -557,8 +569,7 @@ footer{
 
 	main{
 		margin-left: 50px;
-		width: 80%;
-
+		width: 295px;
 	}
 	.main {
 		width: 100%;
@@ -599,7 +610,14 @@ footer{
 		width: 100%;
 		/*text-align: left;*/
 		}
-
+	.img-portfolio{
+		
+		width: 250px;
+		margin-bottom: 30px;
+	}
+	.aside-bar {
+    	bottom: 58px;
+	}
 	/*navigation bar in the header*/
 	#box{
 		position: absolute;
